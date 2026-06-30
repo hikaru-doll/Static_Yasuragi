@@ -1,0 +1,47 @@
+@charset "UTF-8";
+:root {
+  /* === color ==================================== */
+  --cream: #f7f4ef;
+  --warm-beige: #ede8e0;
+  --brown-light: #c4a882;
+  --brown-mid: #9b7b52;
+  --brown-dark: #5c3d1e;
+  --brown-deep: #3b2410;
+  --green-soft: #7a9e7e;
+  --green-muted: #4e7152;
+  --text-dark: #2a1f14;
+  --text-mid: #5c4b35;
+  --text-light: #9b8a74;
+  --white: #fdfcfa;
+  --serif: "Noto Serif JP", serif;
+  --sans: "Noto Sans JP", sans-serif;
+
+  /* === spacing ==================================== */
+  --space-xxs: clamp(0.5rem, 0.439rem + 0.26vw, 0.75rem);
+  --space-xs: 1rem;
+  --space-s: clamp(1.5rem, 1.346rem + 0.77vw, 2rem);
+  --space-m: clamp(2rem, 1.704rem + 1.48vw, 3rem);
+  --space-l: clamp(3rem, 2.407rem + 2.96vw, 5rem);
+  --space-xl: 64px;
+  --space-xxl: 80px;
+
+  /* === font size ==================================== */
+
+  --title-h1: clamp(1.5rem, 1.346rem + 0.77vw, 2rem);
+  --title-h2: clamp(1.25rem, 1.173rem + 0.38vw, 1.5rem);
+  --title-h3: clamp(1.125rem, 1.087rem + 0.19vw, 1.25rem);
+  --title-h4: clamp(1rem, 0.962rem + 0.19vw, 1.125rem);
+  --title-h5: 1rem;
+  --title-h6: 0.8rem;
+
+  /* text */
+  --text-xs: 0.75rem;
+  --text-s: clamp(0.875rem, 0.4vw + 0.8rem, 1rem);
+  --text-m: clamp(1rem, 0.5vw + 0.85rem, 1.125rem);
+  --text-l: clamp(1.125rem, 0.5vw + 1rem, 1.5rem);
+  --text-xl: clamp(1.5rem, 1vw + 1rem, 3rem);
+  /* こっちを使うことにする *******************変換未*****/
+  --text-l: 1.125rem;
+  --text-m: 1rem;
+  --text-s: 0.875rem;
+}
