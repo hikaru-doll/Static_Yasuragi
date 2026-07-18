@@ -45,14 +45,20 @@
     background-color: transparent;
     .nav-menu {
       display: flex;
-      gap: var(--space-s);
+      /* gap: var(--space-s); */
     }
-    .nav-menu li:last-child {
+    & li {
+      margin-left: var(--space-s);
+    }
+    .nav-menu li:nth-child(5) {
       background-color: var(--brown-dark);
       padding: 0 var(--space-s);
       & a {
         color: var(--white);
       }
+    }
+    .nav-menu li:last-child {
+      display: none;
     }
   }
 }

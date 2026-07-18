@@ -9,6 +9,39 @@
     <link rel="stylesheet" href="assets/css/variable.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
+    <!-- 構造化データ start----------------------------------------->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "やすらぎ整体院",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "栄町0-0",
+          "addressLocality": "宝塚市",
+          "addressRegion": "兵庫県",
+          "postalCode": "665-0000",
+          "addressCountry": "JP"
+        },
+        "telephone": "0797-00-0000",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Thursday", "Friday"],
+            "opens": "10:00",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday", "Sunday"],
+            "opens": "9:00",
+            "closes": "18:00"
+          }
+        ]
+      }
+    </script>
+    <!-- /構造化データ end------------------------------------------>
+    <!-- Google Analyticsのタグを貼る場所 -------------------------->
   </head>
   <body>
     <!--header start ------------------------------------------------------------------>
@@ -48,8 +81,10 @@
               1日6名の完全予約制で、ゆっくりと向き合います。
             </p>
             <div class="button">
-              <a class="reservation-button" href="#">今すぐ予約する</a>
-              <a class="access-button" href="#">料金を見る</a>
+              <a class="reservation-button" href="#reservation"
+                >今すぐ予約する</a
+              >
+              <a class="access-button" href="#price">料金を見る</a>
             </div>
           </div>
         </div>
@@ -227,7 +262,7 @@
               <dt>住所</dt>
               <dd>兵庫県宝塚市栄町0-0 ヤスラギハイツ101</dd>
               <dt>電話</dt>
-              <dd>0797-XX-XXXX</dd>
+              <dd>0797-00-0000</dd>
               <dt>営業時間</dt>
               <dd>平日 10:00 〜 20:00<br />土・日・祝 9:00 〜 18:00</dd>
               <dt>定休日</dt>
@@ -247,7 +282,7 @@
         <h2 class="title">ご予約はこちらから</h2>
         <div>
           <p>お電話でのご予約</p>
-          <p class="tel">0797-XX-XXXX</p>
+          <a href="tel:0000-00-0000" class="tel">0797-00-0000</a>
           <p>受付時間 10:00〜19:00（水曜定休）</p>
         </div>
       </section>
@@ -260,7 +295,9 @@
         <p>やすらぎ整体院</p>
         <p>〒665-0000 兵庫県宝塚市栄町0-0 / TEL：0797-XX-XXXX</p>
       </div>
-      <p class="copy">&copy;2024 Yasuragi Seitai-in. All rights reserved.</p>
+      <p class="copy">
+        &copy;<span id="year"></span> Yasuragi Seitai-in. All rights reserved.
+      </p>
     </footer>
     <!-- /footer end ------------------------------------------------------------------->
     <script src="java.js"></script>
