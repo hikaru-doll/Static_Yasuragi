@@ -207,7 +207,7 @@ main
   }
 }
 /* section price */
-#price {
+.price {
   .item {
     border: 1px solid var(--warm-beige);
     background-color: var(--white);
@@ -295,7 +295,7 @@ main
   }
 }
 /* section access */
-#access {
+.access {
   background-color: var(--brown-deep);
   color: var(--white);
   .section-label,
@@ -328,7 +328,7 @@ main
   }
 }
 /* section reservation */
-#reservation {
+.reservation {
   & h2,
   & div {
     text-align: center;
