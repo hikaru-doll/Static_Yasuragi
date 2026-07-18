@@ -40,8 +40,4 @@
   --text-m: clamp(1rem, 0.5vw + 0.85rem, 1.125rem);
   --text-l: clamp(1.125rem, 0.5vw + 1rem, 1.5rem);
   --text-xl: clamp(1.5rem, 1vw + 1rem, 3rem);
-  /* こっちを使うことにする *******************変換未*****/
-  --text-l: 1.125rem;
-  --text-m: 1rem;
-  --text-s: 0.875rem;
 }
