@@ -45,7 +45,6 @@
     background-color: transparent;
     .nav-menu {
       display: flex;
-      /* gap: var(--space-s); */
     }
     & li {
       margin-left: var(--space-s);
