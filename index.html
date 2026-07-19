@@ -47,13 +47,18 @@
     <!--header start ------------------------------------------------------------------>
     <header class="header">
       <h1 class="logo"><a href="#">やすらぎ整体院 </a></h1>
-      <button class="ham">
+      <button
+        class="ham"
+        aria-label="メニューを開く"
+        aria-expanded="false"
+        aria-controls="main-mavigation"
+      >
         <span class="ham1"></span>
         <span class="ham2"></span>
         <span class="ham3"></span>
       </button>
 
-      <nav class="main-navigation">
+      <nav id="main-navigation" class="main-navigation">
         <ul class="nav-menu">
           <li><a href="#concept">理念</a></li>
           <li><a href="#price">料金</a></li>

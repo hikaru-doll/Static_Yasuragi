@@ -4,10 +4,22 @@ document.addEventListener("DOMContentLoaded", function () {
   const ham = document.querySelector(".ham");
   const menu = document.querySelector(".main-navigation");
   ham.addEventListener("click", () => {
-    body.classList.toggle("open");
+    const isOpen = body.classList.toggle("open");
+    ham.setAttribute("aria-expanded", isOpen);
+    ham.setAttribute(
+      "aria-label",
+      isOpen ? "メニューを閉じる" : "メニューを開く",
+    );
+    // body.classList.toggle("open");
+    // const expanded = ham.getAttribute("aria-expanded") === "true";
+    // ham.setAttribute("aria-expanded", !expanded);
   });
   menu.addEventListener("click", () => {
     body.classList.remove("open");
+    ham.setAttribute("aria-expanded", "false");
+    ham.setAttribute("aria-label", "メニューを開く");
+    // body.classList.remove("open");
+    // ham.setAttribute("aria-expanded", "false");
   });
   let focusTrap = document.getElementById("js-focus-trap");
   focusTrap.addEventListener("focus", (e) => {
