@@ -10,16 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
       "aria-label",
       isOpen ? "メニューを閉じる" : "メニューを開く",
     );
-    // body.classList.toggle("open");
-    // const expanded = ham.getAttribute("aria-expanded") === "true";
-    // ham.setAttribute("aria-expanded", !expanded);
   });
   menu.addEventListener("click", () => {
     body.classList.remove("open");
     ham.setAttribute("aria-expanded", "false");
     ham.setAttribute("aria-label", "メニューを開く");
-    // body.classList.remove("open");
-    // ham.setAttribute("aria-expanded", "false");
   });
   let focusTrap = document.getElementById("js-focus-trap");
   focusTrap.addEventListener("focus", (e) => {
