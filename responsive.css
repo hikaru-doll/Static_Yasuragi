@@ -34,6 +34,7 @@
     justify-content: space-between;
     .logo {
       width: 30%;
+      height: fit-content;
     }
   }
   .main-navigation {
