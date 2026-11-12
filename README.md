@@ -1,4 +1,4 @@
- # やすらぎ整体院
+ # 整体院
 
  ## DEMO
 🔗[やすらぎ整体院](https://hikarudoll.xsrv.jp/yasuragi/)  
