@@ -13,8 +13,6 @@
   --text-mid: #5c4b35;
   --text-light: #9b8a74;
   --white: #fdfcfa;
-  --serif: "Noto Serif JP", serif;
-  --sans: "Noto Sans JP", sans-serif;
 
   /* === spacing ==================================== */
   --space-xxs: clamp(0.5rem, 0.439rem + 0.26vw, 0.75rem);
@@ -26,7 +24,7 @@
   --space-xxl: 80px;
 
   /* === font size ==================================== */
-
+  /* title */
   --title-h1: clamp(1.5rem, 1.346rem + 0.77vw, 2rem);
   --title-h2: clamp(1.25rem, 1.173rem + 0.38vw, 1.5rem);
   --title-h3: clamp(1.125rem, 1.087rem + 0.19vw, 1.25rem);
@@ -40,4 +38,8 @@
   --text-m: clamp(1rem, 0.5vw + 0.85rem, 1.125rem);
   --text-l: clamp(1.125rem, 0.5vw + 1rem, 1.5rem);
   --text-xl: clamp(1.5rem, 1vw + 1rem, 3rem);
+
+  /* === font family ==================================== */
+  --sans: "Noto Sans JP", sans-serif;
+  --serif: "Noto Serif JP", serif;
 }
