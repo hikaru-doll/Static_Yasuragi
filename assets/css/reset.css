@@ -11,8 +11,7 @@ body {
   padding: 0;
   color: var(--color-black);
   line-height: 1.5;
-  font-family:
-    "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-optical-sizing: auto;
 }
 img {
   max-width: 100%;

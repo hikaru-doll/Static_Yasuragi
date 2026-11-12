@@ -46,6 +46,7 @@ header
 .logo {
   color: var(--brown-dark);
   position: relative;
+  font-size: var(--title-h1);
 }
 .logo::after {
   content: "YASURAGI SEITAI-IN";
@@ -110,14 +111,13 @@ header
   padding: var(--space-m) 0;
   top: 0;
   right: -100%;
-  transition: 1s ease-in;
   z-index: 20;
   & li {
     line-height: 3;
     text-align: center;
   }
   & a {
-    font-size: var(-title-h2);
+    font-size: var(--title-h2);
   }
   & a:hover {
     color: var(--brown-mid);
@@ -152,8 +152,7 @@ main
   }
 }
 .catchphrase {
-  font-weight: bold;
-  /* font-size: clamp(1.5rem, 1.167rem + 1.67vw, 2rem); */
+  font-weight: 700;
   font-size: var(--title-h1);
   margin-bottom: var(--space-s);
   & span {
