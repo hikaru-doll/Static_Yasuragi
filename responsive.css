@@ -50,7 +50,7 @@
     & li {
       margin-left: var(--space-s);
     }
-    .nav-menu li:nth-child(5) {
+    .nav-menu .header-button {
       background-color: var(--brown-dark);
       padding: 0 var(--space-s);
       & a {
