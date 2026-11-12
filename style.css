@@ -228,10 +228,10 @@ main
     font-size: var(--text-xs);
     font-family: var(--sans);
   }
-  .price {
+  .yen {
     font-size: var(--title-h1);
   }
-  .price::after {
+  .yen::after {
     content: " 円（税込）";
     font-size: var(--text-s);
   }
